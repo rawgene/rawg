@@ -1,0 +1,12 @@
+[submodule "cwl"]
+	path = cwl
+	url = https://github.com/rawgene/cwl
+	branch = master
+[submodule "webportal"]
+	path = webportal
+	url = https://github.com/rawgene/webportal
+	branch = master
+[submodule "flowgen"]
+	path = flowgen
+	url = https://github.com/rawgene/flowgen
+	branch = master
