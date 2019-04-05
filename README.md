@@ -1,5 +1,23 @@
 # RAWG: RNA-Seq Analysis Workflow Generator
 
+## Quickstart guide
+Select a local directory and clone the main repository. Note that the Data directory will be on the same level as this repository. The `-j3` flag clones the three submodules in parallel, can be dropped if you are using an older version of git.  
+  
+```git clone --recurse-submodules -j3 https://github.com/rawgene/rawg```
+  
+Copy and modify the setting file for the webportal which is located under `./rawg/webportal/webportal/settings.py`. You should make a copy of this and call it `local_settings.py` under the same parent directory.  
+  
+Few things need to be modified in the new setting file.
+  * Add the desired domain or ip address to the `ALLOWED_HOST` list
+  * Fill the secret key string with a 50-character random string. We recommand following the Django default method, as below  
+    ```
+    import random
+    ''.join(random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50))
+    ```
+
+### Start the webserver
+From `./rawg/webportal` directory, run `nohup python runserver [ip]:[port] &`
+
 ## Development Guide
 To clone the main repository with all submodules  
 `git clone --recurse-submodules -j3 https://github.com/rawgene/rawg`
