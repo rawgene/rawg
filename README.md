@@ -1,5 +1,7 @@
 # RAWG: RNA-Seq Analysis Workflow Generator
 
+[![Gitter](https://badges.gitter.im/rawgene/rawg.svg)](https://gitter.im/rawgene/rawg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ## Quickstart guide
 Select a local directory and clone the main repository. Note that the Data directory will be on the same level as this repository. The `-j3` flag clones the three submodules in parallel, can be dropped if you are using an older version of git.  
   
