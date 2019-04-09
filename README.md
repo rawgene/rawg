@@ -31,6 +31,11 @@ threads = 2
 ```
 Note that in this example, the relative path to the SQLite database (default by Django) is used. All database supported by SQLAlchemy can be used and the string should be formatted according to [this document](https://docs.sqlalchemy.org/en/latest/core/engines.html#supported-databases). `threads` is set to 2 in this example, you can modify it according to your system. The majority tools used in rawg do not scale well above 12 threads and some are single thread only.
 
+### Setup crontab and scripts
+A script is provided to automatically generate two shell scripts (one for `cwl_creator.py` and one for `run.py`). This setup script also add cron jobs to run these two shell scripts periodically (every 15 seconds). A file based locking system is implemented for these two shell script to prevent racing condition.  
+  
+To use the setup script, simply `bash ./rawg/setup.sh`. Use `crontab -l` to check the correct jobs are added to crontab.
+
 ## Development Guide
 To clone the main repository with all submodules  
 `git clone --recurse-submodules -j3 https://github.com/rawgene/rawg`
