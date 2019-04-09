@@ -1,5 +1,5 @@
 # RAWG: RNA-Seq Analysis Workflow Generator
-
+[![Build Status](https://travis-ci.com/rawgene/cwl.svg?branch=master)](https://travis-ci.com/rawgene/cwl)
 [![Gitter](https://badges.gitter.im/rawgene/rawg.svg)](https://gitter.im/rawgene/rawg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Quickstart guide
@@ -19,6 +19,17 @@ Few things need to be modified in the new setting file.
 
 ### Start the webserver
 From `./rawg/webportal` directory, run `nohup python runserver [ip]:[port] &`
+
+### Config file
+A config file is needed outside the rawg root directory to provide database location for flowgen's scripts as well as the number of threads the analysis tools should use. This file should be called `config.ini`.
+
+_An example config file_
+```
+[main]
+database = sqlite:///rawg/webportal/db.sqlite3
+threads = 2
+```
+Note that in this example, the relative path to the SQLite database (default by Django) is used. All database supported by SQLAlchemy can be used and the string should be formatted according to [this document](https://docs.sqlalchemy.org/en/latest/core/engines.html#supported-databases). `threads` is set to 2 in this example, you can modify it according to your system. The majority tools used in rawg do not scale well above 12 threads and some are single thread only.
 
 ## Development Guide
 To clone the main repository with all submodules  
