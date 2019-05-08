@@ -5,7 +5,9 @@
 
 For a detailed write-up, please see [report.pdf](https://github.com/rawgene/rawg/blob/master/doc/RNASeq_report_CC.pdf)
 
-## Quickstart guide
+<details><summary>
+
+## Quickstart guide</summary><p>
 Select a local directory and clone the main repository. Note that the Data directory will be on the same level as this repository. The `-j3` flag clones the three submodules in parallel, can be dropped if you are using an older version of git.  
   
 ```git clone --recurse-submodules -j3 https://github.com/rawgene/rawg```
@@ -38,6 +40,8 @@ Note that in this example, the relative path to the SQLite database (default by 
 A script is provided to automatically generate two shell scripts (one for `cwl_creator.py` and one for `run.py`). This setup script also add cron jobs to run these two shell scripts periodically (every 15 seconds). A file based locking system is implemented for these two shell script to prevent racing condition.  
   
 To use the setup script, simply `bash ./rawg/setup.sh`. Use `crontab -l` to check the correct jobs are added to crontab.
+
+</p></details>
 
 ## Development Guide
 To clone the main repository with all submodules  
