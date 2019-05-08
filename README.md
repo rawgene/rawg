@@ -3,6 +3,8 @@
 [![Gitter](https://badges.gitter.im/rawgene/rawg.svg)](https://gitter.im/rawgene/rawg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Google group : RAWG](https://img.shields.io/badge/Google%20Group-RAWG-blue.svg)](https://groups.google.com/forum/#!forum/rawgene)
 
+For a detailed write-up, please see [report.pdf](https://github.com/rawgene/rawg/blob/master/doc/RNASeq_report_CC.pdf)
+
 ## Quickstart guide
 Select a local directory and clone the main repository. Note that the Data directory will be on the same level as this repository. The `-j3` flag clones the three submodules in parallel, can be dropped if you are using an older version of git.  
   
@@ -19,7 +21,7 @@ Few things need to be modified in the new setting file.
     ```
 
 ### Start the webserver
-From `./rawg/webportal` directory, run `nohup python runserver [ip]:[port] &`
+From `./rawg/webportal` directory, run `nohup python manage.py runserver [ip]:[port] &`
 
 ### Config file
 A config file is needed outside the rawg root directory to provide database location for flowgen's scripts as well as the number of threads the analysis tools should use. This file should be called `config.ini`.
