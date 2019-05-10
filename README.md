@@ -5,13 +5,27 @@
 
 For a detailed write-up, please see [report.pdf](https://github.com/rawgene/rawg/blob/master/doc/RNASeq_report_CC.pdf)
 
-<details><summary>
 
-## Quickstart guide</summary><p>
+## Quickstart guide
+
+### Clone this project
 Select a local directory and clone the main repository. Note that the Data directory will be on the same level as this repository. The `-j3` flag clones the three submodules in parallel, can be dropped if you are using an older version of git.  
   
 ```git clone --recurse-submodules -j3 https://github.com/rawgene/rawg```
-  
+
+### Prerequisites
+RAWG support `python3` and is developed and tested on 3.6 and 3.7. [`Graphviz`](https://www.graphviz.org/download/) commandline program is needed to generate workflow svg files.
+
+#### Required pyhton packages
+* cwlref-runner
+* Django
+* Django-crispy-forms
+* pydot
+* sqlalchemy
+
+To install/check python packages, run `pip3 install -r requirements.txt` in `./rawg`
+
+### Config local setting file
 Copy and modify the setting file for the webportal which is located under `./rawg/webportal/webportal/settings.py`. You should make a copy of this and call it `local_settings.py` under the same parent directory.  
   
 Few things need to be modified in the new setting file.
