@@ -14,12 +14,13 @@ Select a local directory and clone the main repository. Note that the Data direc
 ```git clone --recurse-submodules -j3 https://github.com/rawgene/rawg```
 
 ### Prerequisites
-RAWG support `python3` and is developed and tested on 3.6 and 3.7. [`Graphviz`](https://www.graphviz.org/download/) commandline program is needed to generate workflow svg files.
+RAWG supports `python3` and is developed and tested on 3.6 and 3.7. [`Graphviz`](https://www.graphviz.org/download/) commandline program is needed to generate workflow svg files.
 
 #### Required pyhton packages
 * cwlref-runner
 * Django
 * Django-crispy-forms
+* pandas
 * pydot
 * sqlalchemy
 
@@ -37,7 +38,7 @@ Few things need to be modified in the new setting file.
     ```
 
 ### Start the webserver
-From `./rawg/webportal` directory, run `nohup python manage.py runserver [ip]:[port] &`
+From `./rawg/webportal` directory, run `nohup python3 manage.py runserver [ip]:[port] &`
 
 ### Config file
 A config file is needed outside the rawg root directory to provide database location for flowgen's scripts as well as the number of threads the analysis tools should use. This file should be called `config.ini`.
