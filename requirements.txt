@@ -1,5 +1,6 @@
 cwlref-runner
 Django
 Django-crispy-forms
+pandas
 pydot
 sqlalchemy
