@@ -3,6 +3,10 @@
 [![Gitter](https://badges.gitter.im/rawgene/rawg.svg)](https://gitter.im/rawgene/rawg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Google group : RAWG](https://img.shields.io/badge/Google%20Group-RAWG-blue.svg)](https://groups.google.com/forum/#!forum/rawgene)
 
+RAWG is born out of a student project at Imperial College London. The aim of this project is to provide an easy and intuitive way for researchers to conduct RNA-Seq analysis and compare different analysis pipelines, by automatically generate workflows based on user-selected tools.
+
+For an online demo of the front-end interface, please see [demo](http://rawg.tony.tc)
+
 For a detailed write-up, please see [report.pdf](https://github.com/rawgene/rawg/blob/master/doc/RNASeq_report_CC.pdf)
 
 
