@@ -5,7 +5,7 @@
 
 RAWG is born out of a student project at Imperial College London. The aim of this project is to provide an easy and intuitive way for researchers to conduct RNA-Seq analysis and compare different analysis pipelines, by automatically generate workflows based on user-selected tools.
 
-For an online demo of the front-end interface, please see <a href="http://rawg.tony.tc" target="_blank">demo</a> and <a href="/doc/userguide.md" target="_blank">user guide</a>
+For an online demo of the front-end interface, please see [demo](http://rawg.tony.tc) and [user guide](/doc/userguide.md)
 
 For a detailed write-up, please see [report.pdf](https://github.com/rawgene/rawg/blob/master/doc/RNASeq_report_CC.pdf)
 
