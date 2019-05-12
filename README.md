@@ -9,6 +9,7 @@ For an online demo of the front-end interface, please see [demo](http://rawg.ton
 
 For a detailed write-up, please see [report.pdf](https://github.com/rawgene/rawg/blob/master/doc/RNASeq_report_CC.pdf)
 
+Note: RAWG was previously hosted in a single repo under a personal account (with 700+ commits). The project was reorganised and transferred to this organisational account to better decouple different components of RAWG. The origanal project, which is under archival now, can be seen [here](https://github.com/tonyyzy/RNASeq/)
 
 ## Quickstart guide
 
