@@ -7,6 +7,7 @@ A demon server for the front-end interface is available [here](http://rawg.tony.
 ![add paired-end sample](add_sample_pe.gif)
 ![add workflows](add_workflows.gif)
 ![submit analysis](submit.gif)
+![plots](plots.gif)
 
 ## Appendix
 ### Command used to set up the demo server
