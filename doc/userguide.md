@@ -1,5 +1,13 @@
 # Demo and User Guide
 
+A demon server for the front-end interface is available [here](http://rawg.tony.tc)
+![create a new session](create_session.gif)
+![create new conditions](create_conditions.gif)
+![add single-end sample](add_sample_sg.gif)
+![add paired-end sample](add_sample_pe.gif)
+![add workflows](add_workflows.gif)
+![submit analysis](submit.gif)
+
 ## Appendix
 ### Command used to set up the demo server
 
