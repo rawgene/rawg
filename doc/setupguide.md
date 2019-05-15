@@ -36,7 +36,9 @@ From `./rawg/webportal` directory, run `python3 manage.py makemigrations` then `
 
 ### Start the webserver
 From `./rawg/webportal` directory, run `nohup python3 manage.py runserver [ip]:[port] &`  
-eg. `nohup python3 manage.py runserver 0.0.0.0:80 &` will bind to all address and the default TCP port 80. 
+eg. `nohup python3 manage.py runserver 0.0.0.0:80 &` will bind to all address and the default TCP port 80.  
+Once the web server is running, you can access the website via any addressable domain/ip and port to the server.  
+Check to make sure the port is open on the system if you are having trouble accessing the website.  
 
 ### Config file
 A config file is needed outside the rawg root directory to provide database location for flowgen's scripts as well as the number of threads the analysis tools should use. This file should be called `config.ini`.
