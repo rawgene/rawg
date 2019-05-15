@@ -57,6 +57,7 @@ A script is provided to automatically generate two shell scripts (one for `cwl_c
 To use the setup script, simply `bash ./rawg/setup.sh`. Use `crontab -l` to check the correct jobs are added to crontab.
 
 ## Development Guide
+
 To clone the main repository with all submodules  
 `git clone --recurse-submodules -j3 https://github.com/rawgene/rawg`
   
