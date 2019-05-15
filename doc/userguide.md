@@ -31,7 +31,7 @@ This shows that RAWG is able to reused the common results (STAR - Stringtie) for
 ![add workflows](add_workflows.gif)
 
 ### Submit analysis
-Finally, the defined session is submitted. A workflow schematic is generated and displayed in the **SESSION INFO** tab. This schematic tries to follow [CWL viewer](http://link_to_cwl_viewer)'s style. At the bottem of the same tab, the schematic, cwl workfklow file, cwl input file can be downloaded. Note that the workflow generation script runs every 15 s on the server so you may need to wait 15 s at most.
+Finally, the defined session is submitted. A workflow schematic is generated and displayed in the **SESSION INFO** tab. This schematic tries to follow [CWL viewer](http://link_to_cwl_viewer)'s style. At the bottem of the same tab, the schematic, cwl workfklow file and input file can be downloaded. The cwl files can be used for local execution as long as files paths are correctly resolved. Note that the workflow generation script runs every 15 s on the server so you may need to wait 15 s at most.
 
 KNOWN ISSUE: the workflow schematic will not display automatically and the user needs to refresh the webpage for the diagram to load correctly.
 ![submit analysis](submit.gif)
