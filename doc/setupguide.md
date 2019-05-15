@@ -22,15 +22,20 @@ To install/check python packages, run `pip3 install -r requirements.txt` in `./r
 Copy and modify the setting file for the webportal which is located under `./rawg/webportal/webportal/settings.py`. You should make a copy of this and call it `local_settings.py` under the same parent directory.  
   
 Few things need to be modified in the new setting file.
-  * Add the desired domain or ip address to the `ALLOWED_HOST` list
+  * Add the desired domain or ip address to the `ALLOWED_HOST` list  
+    eg. `set ALLOWED_HOST = ["*"]` to allow all possible addresses
   * Fill the secret key string with a 50-character random string. We recommand following the Django default method, as below  
     ```
     import random
     ''.join(random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50))
     ```
 
+### Migrate database
+From `./rawg/webportal` directory, run `python3 manage.py makemigrations` then `python3 manage.py migrate`
+
 ### Start the webserver
-From `./rawg/webportal` directory, run `nohup python3 manage.py runserver [ip]:[port] &`
+From `./rawg/webportal` directory, run `nohup python3 manage.py runserver [ip]:[port] &`  
+eg. `nohup python3 manage.py runserver 0.0.0.0:80 &` will bind to all address and the default TCP port 80. 
 
 ### Config file
 A config file is needed outside the rawg root directory to provide database location for flowgen's scripts as well as the number of threads the analysis tools should use. This file should be called `config.ini`.
