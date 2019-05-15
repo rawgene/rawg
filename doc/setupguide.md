@@ -16,7 +16,8 @@ RAWG supports `python3` only and is developed and tested on 3.6 and 3.7. [`Graph
 * pydot
 * sqlalchemy
 
-To install/check python packages, run `pip3 install -r requirements.txt` in `./rawg`
+To install/check python packages, in `./rawg` run `pip3 install -r requirements.txt`  
+Note that you will need to have pip3 installed
 
 ### Config local setting file
 Copy and modify the setting file for the webportal which is located under `./rawg/webportal/webportal/settings.py`. You should make a copy of this and call it `local_settings.py` under the same parent directory.  
