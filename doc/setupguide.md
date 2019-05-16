@@ -6,7 +6,7 @@ Select a local directory and clone the main repository. Note that the Data direc
 ```git clone --recurse-submodules -j3 https://github.com/rawgene/rawg```
 
 ### Prerequisites
-RAWG supports `python3` only and is developed and tested on 3.6 and 3.7. [`Graphviz`](https://www.graphviz.org/download/) commandline program is needed to generate workflow svg files.
+RAWG supports `python3` only and is developed and tested on 3.6 and 3.7. [`Graphviz`](https://www.graphviz.org/download/) commandline program is needed to generate workflow svg files. You will also need to have [`Docker`](https://www.docker.com/) installed to run the workflows. If installing docker on your system is not feasible, [`udocker`](https://github.com/indigo-dc/udocker) can be used but extra configuration is required.
 
 #### Required pyhton packages
 * cwlref-runner
