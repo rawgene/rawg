@@ -44,4 +44,4 @@ RAWG is still in its infancy, we are actively looking for contributors and welco
 
 - Web developer: to furnish our Django website and improve visualisation functionality.
 - Server-side developer: our framework for generating workflows need refactor and make integrating new tools easier.
-- Researchers with RNASeq experience: what tools you use is not available on RAWG yet? How does RAWG compare to your current analysis experience?
+- Researchers with RNASeq experience: what tools do you use which are not currently available on RAWG? How does RAWG compare to your current analysis experience?
