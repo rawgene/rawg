@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.com/rawgene/cwl.svg?branch=master)](https://travis-ci.com/rawgene/cwl)
 [![Gitter](https://badges.gitter.im/rawgene/rawg.svg)](https://gitter.im/rawgene/rawg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Google group : RAWG](https://img.shields.io/badge/Google%20Group-RAWG-blue.svg)](https://groups.google.com/forum/#!forum/rawgene)
+[![Lighting Talk](https://img.shields.io/badge/Talk-BOSC2019-blue.svg)](https://www.youtube.com/watch?v=kEqR0OsgKXk)
+[![Poster](https://img.shields.io/badge/Poster-https://doi.org/10.7490/f1000research.1117143.1-blue.svg)](https://doi.org/10.7490/f1000research.1117143.1)
 
 RAWG is born out of a student project at Imperial College London. The aim of this project is to provide an easy and intuitive way for researchers to conduct RNA-Seq analysis and compare different analysis pipelines, by automatically generating workflows based on user-selected tools.
 
@@ -19,6 +21,8 @@ At its core, RAWG is built with three components:
 - A website based on Django framework, served as user interface ([repo link](https://github.com/rawgene/webportal))
 - A set of python scripts that generate cwl workflows ([repo link](https://github.com/rawgene/flowgen))
 - A collection of RNA-Seq tools packaged in cwl scripts ([repo link](https://github.com/rawgene/cwl))
+
+RAWG was presented as a [lighting talk](https://www.youtube.com/watch?v=kEqR0OsgKXk) and [poster](https://f1000research.com/posters/8-1215) at BOSC2019 in Basel, Switzerland.
 
 ## Motivation
 
