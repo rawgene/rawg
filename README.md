@@ -24,6 +24,12 @@ At its core, RAWG is built with three components:
 
 RAWG was presented as a [lighting talk](https://www.youtube.com/watch?v=kEqR0OsgKXk) and [poster](https://f1000research.com/posters/8-1215) at BOSC2019 in Basel, Switzerland.
 
+---
+_Please cite as:_  
+_Greco AP, Hedley-Miller P, Jesus F et al. RAWG: RNA-Seq analysis workflow generator [version 1; not peer reviewed]. F1000Research 2019, 8:1215 (poster) (https://doi.org/10.7490/f1000research.1117143.1)_
+
+---
+
 ## Motivation
 
 RNA sequencing (RNA-Seq) is becoming the golden standard for analysing gene expressions in biological samples. Many analysis pipelines were developed, enabling standardisation and automation of RNA-Seq data analysis. However, different methodologies leads to wide variation in the number of genes called significant and different workflows exhibit a precision/recall tradeoff. Therefore, the ultimate choice of workflow should take into consideration how the results will be used in subsequent applications ([Williams *et al.*](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1457-z)).  
